@@ -1,5 +1,7 @@
 ---
+section: releases
 layout: release
+title: Weirderness / MANCHINE
 brill_id: 001
 artist: Weirderness
 album: MANCHINE
