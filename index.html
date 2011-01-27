@@ -1,41 +1,37 @@
 ---
-layout: home
+layout: default
 title: Brilliantine
 ---
 
 <section class="home clear">
   <section class="news">
     <h2>News</h2>
-    {% for post in site.posts %}
-      {% if post.section == 'news' %}
-        <article class="article">
-          <p class="article-date">
-            {{ post.date | date: '%Y.%m.%d' }}
-          </p>
-          <h3>{{ post.title }}</h3>
-          {{ post.content }}
-        </article>
-      {% endif %}
+    {% for post in site.categories.news %}
+      <article class="article">
+        <p class="article-date">
+          {{ post.date | date: '%Y.%m.%d' }}
+        </p>
+        <h3>{{ post.title }}</h3>
+        {{ post.content }}
+      </article>
     {% endfor %}
   </section>
 
   <section class="releases">
     <h2>Releases</h2>
-    {% for post in site.posts %}
-      {% if post.section == 'releases' %}
-        <article class="release">
-          <dl class="release-details">
-            <dt>Release No.<dt>
-            <dd class="release-no">{{ post.brill_id }}<dd>
-            <dt>Artist</dt>
-            <dd><a href="/artists#{{ post.artist_slug }}">{{ post.artist }}</a></dd>
-            <dt>Albumen</dt>
-            <dd>{{ post.album }}</dd>
-            <dt>Artwork</dt>
-            <dd class="artwork"><img src="{{ post.coverart }}"></dd>
-          </dl>
-        </article>
-      {% endif %}
+    {% for post in site.categories.releases %}
+      <article class="release">
+        <dl class="release-details">
+          <dt>Release No.<dt>
+          <dd class="release-no">{{ post.brill_id }}<dd>
+          <dt>Artist</dt>
+          <dd><a href="/artists/{{ post.artist_slug }}">{{ post.artist }}</a></dd>
+          <dt>Albumen</dt>
+          <dd><a href="{{ post.url }}">{{ post.album }}</a></dd>
+          <dt>Artwork</dt>
+          <dd class="artwork"><a href="{{ post.url }}"><img alt="" src="{{ post.coverart }}"></a></dd>
+        </dl>
+      </article>
     {% endfor %}
   </section>
 </section>

@@ -9,15 +9,13 @@ layout: nil
   <link href="http://infobrilliantine.com" />
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>http://infobrilliantine.com</id>
-  {% for post in site.posts %}
-    {% if post.type == 'article' %}
-      <entry>
-        <title type="html">{{ post.title }}</title>
-        <link href="http://infobrilliantine.com{{ post.url }}" />
-        <id>http://infobrilliantine.com{{ post.url }}</id>
-        <updated>{{ post.date | date_to_xmlschema }}</updated>
-        <content type="html">{{ post.content | xml_escape }}</content>
-      </entry>
-    {% endif %}
+  {% for post in site.categories.news %}
+    <entry>
+      <title type="html">{{ post.title }}</title>
+      <link href="http://infobrilliantine.com{{ post.url }}" />
+      <id>http://infobrilliantine.com{{ post.url }}</id>
+      <updated>{{ post.date | date_to_xmlschema }}</updated>
+      <content type="html">{{ post.content | xml_escape }}</content>
+    </entry>
   {% endfor %}
 </feed>

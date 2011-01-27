@@ -1,7 +1,6 @@
 ---
-layout: home
+layout: artist
 category: artists
-section: artists
 title: Montauk
 image: /assets/artists/montauk-220.jpg
 ---

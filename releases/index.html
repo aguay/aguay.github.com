@@ -1,31 +1,38 @@
 ---
-layout: home
+layout: default
 title: Brilliantine Releases
 ---
 
 <section class="releases-index">
   <h2>Releases</h2>
-  {% for post in site.posts %}
-    {% if post.section == 'releases' %}
-      <article class="release">
-        <dl class="release-details">
-          <dt>Release No.<dt>
-          <dd class="release-no">{{ post.brill_id }}<dd>
-          <dt>Artist</dt>
-          <dd>{{ post.artist }}</dd>
-          <dt>Albumen</dt>
-          <dd>{{ post.album }}</dd>
-          <dt>Artwork</dt>
-          <dd class="artwork"><img src="{{ post.coverart }}"></dd>
-          <dt>Track List</dt>
-          <dd>
-            <ol class="track-list">
-              {% for track in post.tracks %}
-                <li>{{ track }}</li>
-              {% endfor %}
-            </ol>
-        </dl>
-      </article>
-    {% endif %}
+  {% for post in site.categories.releases %}
+    <article class="release clear">
+      <div class="artwork">
+        <img alt="" src="{{ post.coverart }}">
+      </div>
+      <dl class="release-details">
+        <dt>Release No.<dt>
+        <dd class="release-no">{{ post.brill_id }} / {{ post.date | date: "%Y.%m.%d" }}<dd>
+        <dt>Artist</dt>
+        <dd class="artist">
+          <a href="/artists/{{ post.artist_slug }}">{{ post.artist }}</a>
+        </dd>
+        <dt>Albumen</dt>
+        <dd class="album">
+          <a href="{{ post.url }}">{{ post.album }}</a>
+        </dd>
+        <dt>Track List</dt>
+        <dd>
+          <ol class="track-list">
+            {% for track in post.tracks %}
+              <li>{{ track }}</li>
+            {% endfor %}
+          </ol>
+        </dd>
+      </dl>
+      <div class="description">
+        {{ post.content }}
+      </div>
+    </article>
   {% endfor %}
 </section>

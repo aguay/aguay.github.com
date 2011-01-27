@@ -1,7 +1,6 @@
 ---
-category: releases
-section: releases
 layout: release
+category: releases
 title: Mirror People / Night Impact
 brill_id: BRILL005
 artist: Mirror People

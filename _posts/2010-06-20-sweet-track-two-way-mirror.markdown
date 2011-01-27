@@ -1,7 +1,6 @@
 ---
-category: releases
-section: releases
 layout: release
+category: releases
 title: Sweet Track / Two-Way Mirror
 brill_id: BRILL004
 artist: Sweet Track

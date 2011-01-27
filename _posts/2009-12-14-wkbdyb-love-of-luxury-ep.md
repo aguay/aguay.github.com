@@ -1,7 +1,6 @@
 ---
-category: releases
-section: releases
 layout: release
+category: releases
 title: What Kind of Breeze Do You Blow? / Love of Luxury EP
 brill_id: BRILL001
 artist: What Kind of Breeze Do You Blow?

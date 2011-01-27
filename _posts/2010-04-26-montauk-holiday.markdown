@@ -1,7 +1,6 @@
 ---
-category: releases
-section: releases
 layout: release
+category: releases
 title: Montauk / Holiday
 brill_id: BRILL002
 artist: Montauk

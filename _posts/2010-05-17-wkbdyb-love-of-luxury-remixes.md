@@ -1,7 +1,6 @@
 ---
-category: releases
-section: releases
 layout: release
+category: releases
 title: What Kind of Breeze Do You Blow? / Love of Luxury Remixes
 brill_id: BRILL003
 artist: What Kind of Breeze Do You Blow?

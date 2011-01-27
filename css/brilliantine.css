@@ -27,7 +27,7 @@ menu, ol, ul {
   list-style: none; }
 
 address, p, pre, q {
-  line-height: 1.55; }
+  line-height: 1.5; }
 
 a, abbr[title], dfn[title] {
   padding-bottom: 1px; }
@@ -384,3 +384,43 @@ body.admin .cancelled, body.admin .error {
     color: #999999; }
   .release-details dd.artwork {
     padding-top: 6px; }
+    .release-details dd.artwork img {
+      display: block;
+      width: 220px;
+      height: 220px; }
+
+.releases-index h2 {
+  width: 440px;
+  padding-bottom: 6px;
+  margin: 0; }
+.releases-index article.release {
+  margin: 0;
+  padding: 16px 0;
+  border-top: 1px solid #dddddd; }
+.releases-index .release-details {
+  font-size: 13px;
+  width: 240px;
+  float: left; }
+  .releases-index .release-details .artist, .releases-index .release-details .album {
+    font-size: 16px; }
+  .releases-index .release-details .release-no {
+    font-size: 12px;
+    margin-top: -6px;
+    margin-bottom: 6px; }
+  .releases-index .release-details dd {
+    margin-left: 22px; }
+.releases-index .artwork {
+  width: 220px;
+  float: left; }
+.releases-index .description {
+  width: 480px;
+  float: right; }
+
+.track-list {
+  margin: 12px 18px;
+  list-style: decimal; }
+  .track-list li {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0; }
