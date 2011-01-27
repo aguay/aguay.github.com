@@ -2,10 +2,10 @@
 section: releases
 layout: release
 title: Weirderness / MANCHINE
-brill_id: 001
+brill_id: BRILL002
 artist: Weirderness
 album: MANCHINE
-coverart: /images/releases/weirderness-manchine.jpg
+coverart: /assets/weirderness-manchine-220.jpg
 ---
 
 He's taken Toronto by storm with his weird ways. The EPIC debut release from DJ

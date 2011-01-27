@@ -352,3 +352,27 @@ body.admin .paused, body.admin .warn {
   background: #ffffee; }
 body.admin .cancelled, body.admin .error {
   background: #ffeeee; }
+
+article.release {
+  border-top: 1px solid #dddddd;
+  float: left;
+  font-size: 12px; }
+  article.release:nth-child(odd) {
+    margin-left: 22px; }
+
+.release-details {
+  margin: 0;
+  padding-top: 6px;
+  padding-bottom: 22px; }
+  .release-details dt {
+    height: 1px !important;
+    width: 1px !important;
+    position: absolute !important;
+    overflow: hidden !important;
+    top: -100px !important; }
+  .release-details dd {
+    margin: 0; }
+  .release-details dd.release-no {
+    color: #999999; }
+  .release-details dd.artwork {
+    padding-top: 6px; }

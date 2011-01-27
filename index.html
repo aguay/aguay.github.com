@@ -23,7 +23,16 @@ title: Brilliantine
   {% for post in site.posts %}
     {% if post.section == 'releases' %}
       <article class="release">
-        {{ post.content }}
+        <dl class="release-details">
+          <dt>Release No.<dt>
+          <dd class="release-no">{{ post.brill_id }}<dd>
+          <dt>Artist</dt>
+          <dd>{{ post.artist }}</dd>
+          <dt>Albumen</dt>
+          <dd>{{ post.album }}</dd>
+          <dt>Artwork</dt>
+          <dd class="artwork"><img src="{{ post.coverart }}"></dd>
+        </dl>
       </article>
     {% endif %}
   {% endfor %}

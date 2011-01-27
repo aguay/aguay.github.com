@@ -5,4 +5,4 @@ title: About Brilliantine
 
 ## Brilliantine
 
-Hello
+Hello, you should totally Brill.
