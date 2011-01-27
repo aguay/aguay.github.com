@@ -1,2 +1,4 @@
 markdown:  rdiscount
+rdiscount:
+  extensions: [smart]
 permalink: /:title
