@@ -308,6 +308,7 @@ a.soundcloud-dropbox:hover {
   background-image: none !important;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='(http://a1.soundcloud.com/images/dropbox_small_white.png?018fa2)', sizingMethod='crop') !important; }
 
+@import url(layouts/article.css);
 section.home h2 {
   margin: 0;
   padding-bottom: 6px; }
