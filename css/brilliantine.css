@@ -239,7 +239,7 @@ section > h2 {
   font-size: 16px; }
 
 body > header {
-  height: 184px; }
+  height: 180px; }
   body > header h1 {
     float: left;
     width: 400px;
@@ -257,9 +257,13 @@ body > header {
         overflow: hidden !important;
         top: -100px !important; }
       body > header h1 a.logo:hover {
-        opacity: 0.7; }
+        opacity: 0.7;
+        -webkit-transition: opacity 0.3s;
+        -moz-transition: opacity 0.3s;
+        -ms-transition: opacity 0.3s;
+        -o-transition: opacity 0.3s; }
   body > header nav {
-    padding-top: 70px;
+    padding-top: 72px;
     padding-left: 80px;
     float: left;
     color: #dddddd;
@@ -267,6 +271,7 @@ body > header {
     body > header nav a:hover {
       text-decoration: none; }
     body > header nav li {
+      font-size: 14px;
       padding-right: 36px;
       display: inline-block; }
       body > header nav li:before {
@@ -276,6 +281,7 @@ body > header {
 
 body > footer {
   padding: 22px 0;
+  margin-top: 56px;
   border-top: 1px solid #dddddd; }
   body > footer .copyright {
     background: white url(/images/brilliantine-square-logo.png) no-repeat top left;
@@ -309,27 +315,29 @@ a.soundcloud-dropbox:hover {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='(http://a1.soundcloud.com/images/dropbox_small_white.png?018fa2)', sizingMethod='crop') !important; }
 
 @import url(layouts/article.css);
-section.home h2 {
-  margin: 0;
-  padding-bottom: 6px; }
-section.home .news {
-  float: left;
-  width: 400px; }
-section.home .releases {
-  float: right;
-  width: 480px; }
-section.home .article {
-  border-top: 1px solid #dddddd;
-  padding-bottom: 68px; }
-  section.home .article h3 {
-    line-height: 1.3;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: bold; }
-section.home .article-date {
-  font-size: 12px;
-  color: #999999;
-  padding-top: 4px; }
+section.home {
+  min-height: 500px; }
+  section.home h2 {
+    margin: 0;
+    padding-bottom: 6px; }
+  section.home .news {
+    float: left;
+    width: 400px; }
+  section.home .releases {
+    float: right;
+    width: 480px; }
+  section.home .article {
+    border-top: 1px solid #dddddd;
+    padding-bottom: 68px; }
+    section.home .article h3 {
+      line-height: 1.3;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: bold; }
+  section.home .article-date {
+    font-size: 12px;
+    color: #999999;
+    padding-top: 4px; }
 
 body.admin h1, body.admin h2, body.admin h3 {
   font-size: 2em;
@@ -353,15 +361,15 @@ body.admin .paused, body.admin .warn {
 body.admin .cancelled, body.admin .error {
   background: #ffeeee; }
 
-article.release {
+.home .release {
   border-top: 1px solid #dddddd;
-  float: left;
-  font-size: 12px; }
-  article.release:nth-child(odd) {
+  float: left; }
+  .home .release:nth-child(odd) {
     margin-left: 22px; }
 
 .release-details {
   margin: 0;
+  font-size: 12px;
   padding-top: 6px;
   padding-bottom: 22px; }
   .release-details dt {

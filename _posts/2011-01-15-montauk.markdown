@@ -1,0 +1,9 @@
+---
+layout: home
+category: artists
+section: artists
+title: Montauk
+image: /assets/artists/montauk-220.jpg
+---
+
+Montauk is from gay old Sweden.

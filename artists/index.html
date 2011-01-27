@@ -1,0 +1,15 @@
+---
+layout: home
+title: Brilliantine Artists
+---
+
+<section class="artists">
+  {% for post in site.posts %}
+    {% if post.section == 'artists' %}
+      <article class="artist" id="{{ post.name }}">
+        <img alt="{{ post.title }}" src="{{ post.image }}">
+        {{ post.content }}
+      </article>
+    {% endif %}
+  {% endfor %}
+</section>
