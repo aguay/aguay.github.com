@@ -431,3 +431,33 @@ body.admin .cancelled, body.admin .error {
     line-height: 1.5;
     margin: 0;
     padding: 0; }
+
+section.artists-index h2 {
+  width: 200px;
+  margin: 0;
+  padding-bottom: 6px; }
+
+article.artist {
+  border-top: 1px solid #dddddd;
+  padding: 16px 0; }
+  article.artist .photo {
+    float: left; }
+    article.artist .photo img {
+      display: block;
+      width: 220px;
+      height: 220px; }
+  article.artist .details {
+    margin-left: 20px;
+    width: 460px;
+    float: left; }
+    article.artist .details dt {
+      height: 1px !important;
+      width: 1px !important;
+      position: absolute !important;
+      overflow: hidden !important;
+      top: -100px !important; }
+    article.artist .details .location {
+      color: #777777; }
+  article.artist h3 {
+    font-weight: bold;
+    font-size: 16px; }

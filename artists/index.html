@@ -4,11 +4,21 @@ title: Brilliantine Artists
 ---
 
 <section class="artists-index">
+  <h2>Artists</h2>
   {% for post in site.categories.artists %}
-    <article class="artist">
-      <img alt="{{ post.title }}" src="{{ post.image }}">
-      {{ post.location }}
-      {{ post.content }}
+    <article class="artist clear">
+      <div class="photo">
+        <img alt="{{ post.title }}" src="{{ post.image }}">
+      </div>
+      <div class="details">
+        <h3>{{ post.title }}</h3>
+        <dl class="artist-details">
+          <dt>Location</dt>
+          <dd class="location">{{ post.location }}</dd>
+          <dt>About</dt>
+          <dd class="about">{{ post.content }}</dd>
+        </dl>
+      </dl>
     </article>
   {% endfor %}
 </section>

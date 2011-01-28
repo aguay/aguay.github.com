@@ -3,6 +3,5 @@ layout: artist
 category: artists
 title: Montauk
 image: /assets/artists/montauk-220.jpg
+location: Stockholm, Sweden
 ---
-
-Montauk is from gay old Sweden.
