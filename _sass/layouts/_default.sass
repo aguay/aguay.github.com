@@ -66,14 +66,22 @@ body > footer
       display: block
       padding-top: 76px
   .links
-    margin-left: 60px
-    float: left
-    li
-      margin: 0
-      padding-bottom: 8px
-  .soundcloud
-    margin-top: 10px
     float: right
+    a
+      color: #666
+    li
+      border-left: 1px solid #aaa
+      display: inline-block
+      margin: 0
+      padding: 0 8px
+      line-height: 0.9
+      &:first-child
+        padding-left: 0
+        border-left: none
+      &:last-child
+        padding-right: 0
+    .soundcloud
+      padding-top: 22px
 
 // Soundcloud widget
 a.soundcloud-dropbox
