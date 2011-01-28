@@ -7,6 +7,9 @@ artist: Sweet Track
 artist_slug: sweet-track
 album: Two-Way Mirror
 coverart: /assets/releases/sweet-track-two-way-mirror-220.jpg
+beatport: https://www.beatport.com/en-US/html/content/release/detail/249824/Two-Way%20Mirror
+itunes: http://itunes.apple.com/us/album/two-way-mirror/id381796663
+junodownload: http://www.junodownload.com/products/two-way-mirror/1589458-02/
 tracks:
 - Two-Way Mirror
 - Upon Joining The Army

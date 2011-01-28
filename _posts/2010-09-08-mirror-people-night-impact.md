@@ -4,9 +4,11 @@ category: releases
 title: Mirror People / Night Impact
 brill_id: BRILL005
 artist: Mirror People
-artist_slug: mirror-people
 album: Night Impact
 coverart: /assets/releases/mirror-people-night-impact-220.jpg
+beatport: https://www.beatport.com/en-US/html/content/release/detail/266224/Night%20Impact
+itunes: http://itunes.apple.com/us/album/night-impact-ep/id394063262
+junodownload: http://www.junodownload.com/products/night-impact/1615335-02/
 tracks:
 - Night Impact
 - Diamonds

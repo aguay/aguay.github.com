@@ -387,6 +387,8 @@ body.admin .cancelled, body.admin .error {
     top: -100px !important; }
   .release-details dd {
     margin: 0; }
+  .release-details dd.artist {
+    font-weight: bold; }
   .release-details dd.release-no {
     color: #999999; }
   .release-details dd.artwork {
@@ -409,6 +411,7 @@ body.admin .cancelled, body.admin .error {
   width: 240px;
   float: left; }
   .releases-index .release-details .artist, .releases-index .release-details .album {
+    font-weight: bold;
     font-size: 16px; }
   .releases-index .release-details .release-no {
     font-size: 12px;
@@ -419,6 +422,17 @@ body.admin .cancelled, body.admin .error {
 .releases-index .artwork {
   width: 220px;
   float: left; }
+.releases-index .commerce-links {
+  font-size: 12px;
+  text-align: center; }
+  .releases-index .commerce-links li {
+    line-height: 1;
+    border-left: 1px solid #bbbbbb;
+    padding: 0 4px;
+    display: inline-block; }
+    .releases-index .commerce-links li:first-child {
+      padding-left: 0;
+      border-left: none; }
 .releases-index .description {
   width: 480px;
   float: right; }

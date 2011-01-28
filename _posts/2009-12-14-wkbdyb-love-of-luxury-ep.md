@@ -7,6 +7,8 @@ artist: What Kind of Breeze Do You Blow?
 artist_slug: wkbdyb
 album: Love of Luxury EP
 coverart: /assets/releases/wkbdyb-love-of-luxury-ep-220.jpg
+itunes: http://itunes.apple.com/us/album/love-of-luxury-ep/id341180068
+junodownload: http://www.junodownload.com/products/love-of-luxury-ep/1493391-02/
 tracks:
 - Love of Luxury
 - The Probe

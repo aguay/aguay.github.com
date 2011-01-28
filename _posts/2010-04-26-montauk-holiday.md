@@ -7,6 +7,9 @@ artist: Montauk
 artist_slug: montauk
 album: Holiday
 coverart: /assets/releases/montauk-holiday-220.jpg
+beatport: https://www.beatport.com/en-US/html/content/release/detail/249822/Holiday
+itunes: http://itunes.apple.com/us/album/holiday-remixes/id371324674
+junodownload: http://www.junodownload.com/products/holiday/1566560-02/
 tracks:
 - Holiday
 - Holiday (Tronik Youth Pool Mix)

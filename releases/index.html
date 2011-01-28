@@ -8,14 +8,31 @@ title: Brilliantine Releases
   {% for post in site.categories.releases %}
     <article class="release clear">
       <div class="artwork">
-        <img alt="" src="{{ post.coverart }}">
+        <p>
+          <a href="{{ post.url }}"><img alt="" src="{{ post.coverart }}"></a>
+        </p>
+        <ul class="commerce-links">
+          {% if post.beatport %}
+            <li><a href="{{ post.beatport }}">Beatport</a></li>
+          {% endif %}
+          {% if post.junodownload %}
+            <li><a href="{{ post.junodownload }}">Juno Download</a></li>
+          {% endif %}
+          {% if post.itunes %}
+            <li><a href="{{ post.itunes }}">iTunes</a></li>
+          {% endif %}
+        </ul>
       </div>
       <dl class="release-details">
         <dt>Release No.<dt>
         <dd class="release-no">{{ post.brill_id }} / {{ post.date | date: "%Y.%m.%d" }}<dd>
         <dt>Artist</dt>
         <dd class="artist">
-          <a href="/artists/{{ post.artist_slug }}">{{ post.artist }}</a>
+          {% if post.artist_slug %}
+            <a href="/artists/{{ post.artist_slug }}">{{ post.artist }}</a>
+          {% else %}
+            {{ post.artist }}
+          {% endif %}
         </dd>
         <dt>Albumen</dt>
         <dd class="album">
