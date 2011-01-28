@@ -3,10 +3,30 @@ layout: default
 ---
 
 <section class="release">
-  <h2>{{ page.artist }}</h2>
-  <h3>{{ page.album }}</h3>
+  <h2 class="artist">{{ page.artist }}</h2>
+  <h3 class="album">{{ page.album }}</h3>
+
   {{ content }}
+
   <div class="tracklist clear">
-    <img alt="" src="{{ page.coverart }}">
+    <p>
+      <img alt="" src="{{ page.coverart }}">
+    </p>
+    <ol class="track-list">
+      {% for track in page.tracks %}
+        <li>{{ track }}</li>
+      {% endfor %}
+    </ol>
+    <ul class="commerce-links">
+      {% if page.beatport %}
+        <li><a href="{{ page.beatport }}">Beatport</a></li>
+      {% endif %}
+      {% if page.junodownload %}
+        <li><a href="{{ page.junodownload }}">Juno Download</a></li>
+      {% endif %}
+      {% if page.itunes %}
+        <li><a href="{{ page.itunes }}">iTunes</a></li>
+      {% endif %}
+    </ul>
   </div>
 </section>
