@@ -277,7 +277,7 @@ body > header {
       body > header nav li:before {
         content: "/ "; }
       body > header nav li:hover {
-        color: #aaaaaa; }
+        color: #222222; }
 
 body > footer {
   padding: 22px 0;
@@ -291,7 +291,14 @@ body > footer {
     body > footer .copyright span {
       display: block;
       padding-top: 76px; }
+  body > footer .links {
+    margin-left: 60px;
+    float: left; }
+    body > footer .links li {
+      margin: 0;
+      padding-bottom: 8px; }
   body > footer .soundcloud {
+    margin-top: 10px;
     float: right; }
 
 a.soundcloud-dropbox {

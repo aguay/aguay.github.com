@@ -3,10 +3,11 @@ layout: default
 title: Brilliantine Artists
 ---
 
-<section class="artists">
+<section class="artists-index">
   {% for post in site.categories.artists %}
-    <article class="artist" id="{{ post.name }}">
+    <article class="artist">
       <img alt="{{ post.title }}" src="{{ post.image }}">
+      {{ post.location }}
       {{ post.content }}
     </article>
   {% endfor %}
