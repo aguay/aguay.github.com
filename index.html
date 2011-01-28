@@ -26,11 +26,14 @@ title: Brilliantine
           <dd class="release-no">{{ post.brill_id }}<dd>
           <dt>Artist</dt>
           <dd class="artist">
-            {% if post.artist_slug %}
-              <a href="/artists/{{ post.artist_slug }}">{{ post.artist }}</a>
-            {% else %}
-              {{ post.artist }}
-            {% endif %}
+            {% comment %}
+              {% if post.artist_slug %}
+                <a href="/artists/{{ post.artist_slug }}">{{ post.artist }}</a>
+              {% else %}
+                {{ post.artist }}
+              {% endif %}
+            {% endcomment %}
+            {{ post.artist }}
           </dd>
           <dt>Albumen</dt>
           <dd><a href="{{ post.url }}">{{ post.album }}</a></dd>

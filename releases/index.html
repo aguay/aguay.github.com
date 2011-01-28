@@ -11,28 +11,22 @@ title: Brilliantine Releases
         <p>
           <a href="{{ post.url }}"><img alt="" src="{{ post.coverart }}"></a>
         </p>
-        <ul class="commerce-links">
-          {% if post.beatport %}
-            <li><a href="{{ post.beatport }}">Beatport</a></li>
-          {% endif %}
-          {% if post.junodownload %}
-            <li><a href="{{ post.junodownload }}">Juno Download</a></li>
-          {% endif %}
-          {% if post.itunes %}
-            <li><a href="{{ post.itunes }}">iTunes</a></li>
-          {% endif %}
-        </ul>
+        <dl class="release-no">
+          <dt class="hide">Release No.<dt>
+          <dd>{{ post.brill_id }} / {{ post.date | date: "%Y.%m.%d" }}<dd>
+        </dl>
       </div>
       <dl class="release-details">
-        <dt>Release No.<dt>
-        <dd class="release-no">{{ post.brill_id }} / {{ post.date | date: "%Y.%m.%d" }}<dd>
         <dt>Artist</dt>
         <dd class="artist">
-          {% if post.artist_slug %}
-            <a href="/artists/{{ post.artist_slug }}">{{ post.artist }}</a>
-          {% else %}
-            {{ post.artist }}
-          {% endif %}
+          {% comment %}
+            {% if post.artist_slug %}
+              <a href="/artists/{{ post.artist_slug }}">{{ post.artist }}</a>
+            {% else %}
+              {{ post.artist }}
+            {% endif %}
+          {% endcomment %}
+          {{ post.artist }}
         </dd>
         <dt>Albumen</dt>
         <dd class="album">
@@ -49,6 +43,17 @@ title: Brilliantine Releases
       </dl>
       <div class="description">
         {{ post.content }}
+        <ul class="commerce-links">
+          {% if post.beatport %}
+            <li><a href="{{ post.beatport }}">Beatport</a></li>
+          {% endif %}
+          {% if post.junodownload %}
+            <li><a href="{{ post.junodownload }}">Juno Download</a></li>
+          {% endif %}
+          {% if post.itunes %}
+            <li><a href="{{ post.itunes }}">iTunes</a></li>
+          {% endif %}
+        </ul>
       </div>
     </article>
   {% endfor %}

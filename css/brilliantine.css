@@ -411,31 +411,35 @@ body.admin .cancelled, body.admin .error {
   margin: 0; }
 .releases-index article.release {
   margin: 0;
-  padding: 16px 0;
+  padding: 18px 0;
   border-top: 1px solid #dddddd; }
 .releases-index .release-details {
   font-size: 13px;
   width: 240px;
-  float: left; }
+  float: left;
+  margin-top: -8px; }
   .releases-index .release-details .artist, .releases-index .release-details .album {
     font-weight: bold;
     font-size: 16px; }
-  .releases-index .release-details .release-no {
-    font-size: 12px;
-    margin-top: -6px;
-    margin-bottom: 6px; }
   .releases-index .release-details dd {
     margin-left: 22px; }
 .releases-index .artwork {
+  text-align: center;
   width: 220px;
   float: left; }
+.releases-index .release-no {
+  margin-top: -4px;
+  padding: 0;
+  color: #888888;
+  font-size: 12px; }
 .releases-index .commerce-links {
   font-size: 12px;
-  text-align: center; }
+  margin: 22px 0;
+  text-align: left; }
   .releases-index .commerce-links li {
     line-height: 0.8;
-    border-left: 1px solid #bbbbbb;
-    padding: 0 4px;
+    border-left: 1px solid #aaaaaa;
+    padding: 0 6px;
     display: inline-block; }
     .releases-index .commerce-links li:first-child {
       padding-left: 0;
