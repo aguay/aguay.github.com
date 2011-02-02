@@ -3,6 +3,11 @@ layout: default
 ---
 
 <section class="news">
-  <h2>{{ page.title }}</h2>
-  {{ content }}
+  <article class="article">
+    <p class="article-date">
+      {{ page.date | date: '%Y.%m.%d' }}
+    </p>
+    <h3>{{ page.title }}</h3>
+    {{ content }}
+  </article>
 </section>
